@@ -15,7 +15,7 @@ export interface Project {
 
 export const projects: Project[] = [
     {
-        title: 'Financial Risk Platform Capstone',
+        title: 'Financial Risk Platform (Capstone)',
         image: RiskModel,
         imageAlt: 'Simulated portfolio risk distribution produced by the financial risk model',
         description:
