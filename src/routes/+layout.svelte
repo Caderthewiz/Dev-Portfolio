@@ -42,7 +42,8 @@
 	}
 
     .site__background {
-		position: fixed;
+		position: absolute;
+        z-index: 0;
 		inset: 0;
 		z-index: 0;
 		width: 100%;
@@ -67,7 +68,6 @@
         height: calc(100vh - var(--margin-block) * 2);
         background: var(--plate-bg);
         backdrop-filter: blur(var(--plate-blur));
-        -webkit-backdrop-filter: blur(var(--plate-blur));
         border: 1px solid var(--plate-border);
         border-radius: var(--plate-radius);
         box-shadow: var(--plate-shadow);

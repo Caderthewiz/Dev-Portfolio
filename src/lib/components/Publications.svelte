@@ -4,7 +4,7 @@
     <div class="publications">
         <article class="card">
             <div class="content">
-                <div class="info">
+                <div>
                     <h3>
                         <span>
                             When Silence Distorts Consensus: A Private

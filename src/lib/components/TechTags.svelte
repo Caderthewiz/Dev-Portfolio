@@ -13,16 +13,15 @@
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-        margin: 0;
-        padding: 0;
-        list-style: none;
+        padding: 0.5rem 0;
     }
-
+    
     .tech-tags li {
-        padding: 0.25rem 0.55rem;
+        padding: 0.125rem 0.6rem;
         border: 1px solid var(--accent);
-        border-radius: 999px;
+        border-radius: 100px;
         color: var(--accent);
-        font-size: 0.8rem;
+        font-size: 0.8em;
+        line-height: 1.4;
     }
 </style>

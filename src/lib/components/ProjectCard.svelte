@@ -34,7 +34,7 @@
             </div>
         {/if}
 
-        <div class="info">
+        <div>
             <h3>
                 {#if project.href}
                     <a
@@ -43,42 +43,37 @@
                         rel="noopener noreferrer"
                     >
                         {project.title}
-                        <span class="visually-hidden"> (opens in a new tab)</span>
                     </a>
                 {:else}
                     {project.title}
                 {/if}
             </h3>
 
-            <p class="desc">{project.description}</p>
+            <p>{project.description}</p>
             <TechTags technologies={project.technologies} />
         </div>
     </div>
 </article>
 
 <style>
-    .card {
-        scroll-margin-top: 2rem;
+    .media {
+        flex-shrink: 0;
     }
 
     .media__img,
     .media__vid {
         display: block;
-        width: 100%;
-        height: auto;
+        width: 160px;
+        height: 90px;
+        box-sizing: border-box;
+        border: 2px solid var(--plate-border);
+        border-radius: var(--plate-radius);
         aspect-ratio: 16 / 9;
         object-fit: cover;
     }
 
-    .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
+    .card:hover h3 a {
+        color: var(--accent);
+        text-decoration: underline;
     }
 </style>

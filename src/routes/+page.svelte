@@ -45,22 +45,4 @@
         overflow-x: hidden;
         scroll-behavior: smooth;
     }
-
-    @media (max-width: 900px) {
-        .content {
-            flex-direction: column;
-            height: auto;
-        }
-        
-        .content__left {
-            flex: none;
-            overflow: visible;
-        }
-        
-        .content__right {
-            flex: none;
-            height: auto;
-            overflow: visible;
-        }
-    }
 </style>

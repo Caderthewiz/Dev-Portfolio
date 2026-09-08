@@ -28,7 +28,7 @@ export const experiences: Experience[] = [
     },
     {
         role: 'IT Support Technician',
-        company: 'Kansas State University College of Business Administration',
+        company: 'Kansas State University, College of Business Administration',
         start: '2024-05',
         end: '2024-08',
         description:

@@ -6,7 +6,7 @@
 <section id="experience" aria-labelledby="experience-heading">
     <h2 id="experience-heading" class="section-title">Experience</h2>
 
-    <div class="experiences">
+    <div class="experience-cards">
         {#each experiences as experience (experience.role + experience.company)}
             <ExperienceCard {experience} />
         {/each}
@@ -14,7 +14,7 @@
 </section>
 
 <style>
-    .experiences {
+    .experience-cards {
         display: flex;
         flex-direction: column;
         gap: 1rem;

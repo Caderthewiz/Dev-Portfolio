@@ -15,7 +15,7 @@
 <article class="card">
     <div class="content">
         <div class="info">
-            <div class="role-title">
+            <div class="role">
                 <h3>{experience.role}</h3>
                 <p class="date">
                     <time datetime={experience.start}>{formatMonth(experience.start)}</time>
@@ -28,42 +28,27 @@
                 </p>
             </div>
 
-            <p class="company-title">{experience.company}</p>
-            <p class="desc">{experience.description}</p>
+            <p class="company">{experience.company}</p>
+            <p>{experience.description}</p>
             <TechTags technologies={experience.technologies} />
         </div>
     </div>
 </article>
 
 <style>
-    .role-title {
+    .role {
         display: flex;
         flex-wrap: wrap;
         align-items: baseline;
         justify-content: space-between;
-        gap: 0.5rem 1rem;
-    }
-
-    .role-title h3 {
-        margin: 0;
     }
 
     .date,
-    .company-title {
+    .company {
         color: var(--text-muted);
     }
 
-    .date {
-        margin: 0;
-        flex-shrink: 0;
-        white-space: nowrap;
-    }
-
-    .company-title {
-        margin-block: 0.5rem;
-    }
-
-    .card {
-        scroll-margin-top: 2rem;
+    .company {
+        margin-block: 0.2rem 0.5rem;
     }
 </style>

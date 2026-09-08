@@ -106,17 +106,12 @@
 	.flow-field {
 	    position: absolute;
 		inset: 0;
-		width: 100%;
-		height: 100%;
 		pointer-events: none;
-		mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 	}
 
 	.flow-field :global(canvas) {
 		display: block;
         position: absolute;
         inset: 0;
-		width: 100%;
-		height: 100%;
 	}
 </style>
